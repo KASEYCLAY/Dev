@@ -26,6 +26,7 @@ table {
     border-collapse: collapse;
     background-color: #2d7a2d;
     margin-bottom: 20px; /* Added margin-bottom to give space between table and buttons */
+    border-radius: 50px;
 }
 
 th, td {
@@ -114,11 +115,11 @@ th img {
 }
 
 .game-limit {
-margin-top: 20px;
-margin-bottom: 20px;
+margin-top: 10px;
+margin-bottom: 10px;
 font-size: x-large;
 color: white;
-background-color: #1e1e2e;
+background-color: #1e1e2e; 
 padding: 15px;
 border-radius: 10px;
 display:  inline-block;
