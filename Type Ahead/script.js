@@ -1,6 +1,5 @@
 const endpoint = 'gb.json'; // Path to your JSON file
 const cities = [];
-
 // Fetch city data and populate the `cities` array
 async function fetchCities() {
     try {

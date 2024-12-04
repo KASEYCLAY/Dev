@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footy Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Tiki-Taka-Toe</h1>
+
+    <!-- Player Turn Display -->
+    <div class="player-turn">
+        <h2>Player Turn: <span id="current-player">Player 1</span></h2>
+    </div>
+
+    <!-- Score Display -->
+    <div class="scoreboard">
+        <h3>Scoreboard</h3>
+        <p>Player 1: <span id="player1-score">0</span></p>
+        <p>Player 2: <span id="player2-score">0</span></p>
+    </div>
+
+    <!-- Game Table -->
+    <table>
+        <thead>
+            <tr>
+                <th class="header-icon"><img src="" alt="BLANK"></th>
+                <th>BLANK</th>
+                <th>BLANK</th>
+                <th>BLANK</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="manager-icon"><img src="" alt="BLANK"></td>
+                <td><div class="player-box">Choose Player</div></td>
+                <td><div class="player-box">Choose Player</div></td>
+                <td><div class="player-box">Choose Player</div></td>
+            </tr>
+            <tr>
+                <td class="club-icon"><img src="" alt="BLANK"></td>
+                <td><div class="player-box">Choose Player</div></td>
+                <td><div class="player-box">Choose Player</div></td>
+                <td><div class="player-box">Choose Player</div></td>
+            </tr>
+            <tr>
+                <td class="club-icon"><img src="" alt="BLANK"></td>
+                <td><div class="player-box">Choose Player</div></td>
+                <td><div class="player-box">Choose Player</div></td>
+                <td><div class="player-box">Choose Player</div></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="controls">
+        <button id="draw-button">End as Draw</button>
+        <button id="skip-button">Skip Turn</button>
+    <div class="game-limit">
+        <p>Game Limit: <span id="game-limit">5</span> games</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
