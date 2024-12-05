@@ -1,141 +1,58 @@
+/* styles.css */
 body {
     font-family: Arial, sans-serif;
-    background-color: #1e1e2e;
-    color: white;
     text-align: center;
+    background-color: #282c34;
+    color: white;
     margin: 0;
     padding: 0;
-}
-
-h1 {
-    font-size: 2.5rem;
-    margin-top: 20px;
-}
-
-h2 {
-    font-size: 1.8rem;
-}
-
-h3 {
-    font-size: 1.5rem;
-    margin-top: 10px;
-}
-
-table {
-    margin: auto;
-    border-collapse: collapse;
-    background-color: #2d7a2d;
-    margin-bottom: 20px; /* Added margin-bottom to give space between table and buttons */
-    border-radius: 50px;
-}
-
-th, td {
-    border: 1px solid #1e1e1e;
-    width: 150px;
-    height: 150px;
-    position: relative;
-    padding: 10px;
-    text-align: center;
-}
-
-th {
-    background-color: #1e1e3e; /* Corrected */
-}
-
-th img {
-    width: 30px;
-    height: 30px;
-}
-
-.player-box {
-    color: #eeeeee;
-    font-size: 16px;
-    background: #3e3e4e;
-    border-radius: 10px;
-    padding: 5px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90%;
-    width: 90%;
-    margin: auto;
-}
-
-.player-box:hover {
-    background-color: #4caf50;
-}
-
-.manager-icon img, .club-icon img {
-    width: 50px;
-    height: 50px;
-}
-
-.controls {
-    width: 250px;
+  }
+  
+  #game-container {
+    margin: 50px auto;
+    max-width: 400px;
+  }
+  
+  .scoreboard {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
-    margin-bottom: 20px; /* Ensure there's some space below the buttons */
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.controls button {
-    width: 100px;
-    height: 100px;
-    background-color: #1e1e1e;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    border: none;
-    border-radius: 120px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s ease-in-out;
-}
-
-.controls button:hover {
-    background-color: #333;
-    transform: scale(1.05);
-}
-
-.controls button:focus {
-    outline: none;
-}
-.player-turn, .scoreboard, .game-limit {
-    margin-top: 20px;
     margin-bottom: 20px;
-    font-size: 1.2rem;
-    color: white;
-}
-
-.player-turn h2, .scoreboard h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.game-limit {
-margin-top: 10px;
-margin-bottom: 10px;
-font-size: x-large;
-color: white;
-background-color: #1e1e2e; 
-padding: 15px;
-border-radius: 10px;
-display:  inline-block;
-text-align: center;
-width: 250px;
-}
-
-.game-limit p {
-margin: 0;
-font-size: large;
-font-weight: bolder;
-color: aliceblue;
-}
-
-.game-limit span {
-font-size: large;
-font-weight: bolder;
-color: aqua;
-}
+  }
+  
+  #grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+  }
+  
+  .cell {
+    background: #444;
+    border: 1px solid #555;
+    height: 100px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .cell.selected {
+    cursor: default;
+    background: #666;
+  }
+  
+  .cell span {
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #61dafb;
+    border: none;
+    color: black;
+    margin-top: 20px;
+  }
+  
