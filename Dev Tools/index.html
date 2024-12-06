@@ -11,7 +11,26 @@
   <p1 onclick="makeOrange()">THIS GETS BIGGER AND ORANGE</p1>
   
   <script>
-    const dogs = [{ name: 'Snickers', age: 2 }, { name: 'hugo', age: 8 }];
+    const dogs = [{ name: 'Snickers', age: 2, height: 75, weight: 200 },
+  { name: 'Hugo', age: 8, height: 50, weight: 100 },
+  { name: 'Bella', age: 4, height: 60, weight: 120 },
+  { name: 'Rocky', age: 3, height: 65, weight: 150 },
+  { name: 'Daisy', age: 1, height: 55, weight: 90 },
+  { name: 'Max', age: 5, height: 70, weight: 180 },
+  { name: 'Buddy', age: 6, height: 68, weight: 170 },
+  { name: 'Lucy', age: 3, height: 62, weight: 130 },
+  { name: 'Charlie', age: 7, height: 72, weight: 190 },
+  { name: 'Molly', age: 2, height: 58, weight: 110 },
+  { name: 'Bailey', age: 4, height: 67, weight: 140 },
+  { name: 'Cooper', age: 3, height: 66, weight: 160 },
+  { name: 'Sadie', age: 5, height: 63, weight: 135 },
+  { name: 'Lola', age: 1, height: 52, weight: 95 },
+  { name: 'Toby', age: 6, height: 74, weight: 200 },
+  { name: 'Roxy', age: 4, height: 61, weight: 125 },
+  { name: 'Duke', age: 7, height: 70, weight: 185 },
+  { name: 'Maggie', age: 3, height: 59, weight: 115 },
+  { name: 'Bear', age: 8, height: 78, weight: 220 },
+  { name: 'Zoey', age: 2, height: 56, weight: 100 }];
 
     function makeGreen() {
       const p = document.querySelector('p');
@@ -26,29 +45,54 @@
     }
 
     // Regular
-
+console.log('hello');
     // Interpolated
-
+console.log('Hello I am a %s string!', 'POO');
     // Styled
-
+console.log('%c I am some great text', 'font-size:50px');
     // warning!
-
+console.warn('HELP');
     // Error :|
-
+console.error('double dutch');
     // Info
-
+console.info("help me");
     // Testing
-
+    const p = document.querySelector('p');
+    console.assert(p.classList.contains('ouch'), 'this is wrong!');
     // clearing
-
+    console.clear();
     // Viewing DOM Elements
-
+    console.dir(p);
+    console.clear();
     // Grouping together
-
+    dogs.forEach(dog => {
+        console.groupCollapsed(`${dog.name}`);
+        console.log(`This is ${dog.name}`);
+        console.log(`${dog.name} is ${dog.age} years old`);
+        console.log(`${dog.name} is ${dog.age * 7} dog years old`);
+        console.log(`${dog.name} is ${dog.height} height of dog`);
+        console.log(`${dog.name} is ${dog.weight} weight of dog`); 
+        console.groupEnd();
+    });
     // counting
-
+    console.count('wes');
+    console.count('wes');
+    console.count('wes');
+    console.count('wes');
+    console.count('wes');
+    console.count('wes');
+    console.count('wes');
+    console.count('wes');
+    console.count('Alan');
+    console.count('wes');
     // timing
-
+    console.time('fetching data');
+    fetch('https://api.github.com/users/wesbos')
+    .then(response => response.json())
+    .then(data => {
+        console.timeEnd('fetching data');
+        console.log(data);  // Log the correct data
+    });
   </script>
 </body>
 </html>
