@@ -1,2 +1,14 @@
-const checkboxes = document.querySelectorAll('.inbox[type=2checkbox2]');
-console.log(checkboxes)
+const checkboxes = document.querySelectorAll('.inbox input[type="checkbox"]');
+
+let lastChecked;
+
+function handcleCheck(e) {
+    let inBetween = false;
+if(e.shiftKey && this.checked) {
+ checkboxes.forEach(checkbox => {
+ console.log(checkbox);  
+ });
+}
+    lastChecked = this;
+}
+checkboxes.forEach(checkbox => checkbox.addEventListener('change', handleCheck))
