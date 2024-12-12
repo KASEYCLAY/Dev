@@ -10,4 +10,3 @@ if (pressed.join('').includes(secretCode)) {
 }
 console.log(pressed)
 });
-

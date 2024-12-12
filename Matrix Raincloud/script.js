@@ -5,7 +5,7 @@ function createNumbersRain() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
   
-    const fontSize = 25;
+    const fontSize = 1;
     const columns = canvas.width / fontSize;
     const drops = Array(Math.floor(columns)).fill(1);
   
