@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: black;
+  color: lime;
+  }
+  
+canvas {
+  display: block;
+  }
+
+.cloud {
+  width: 200px;
+  height: auto;
+}
