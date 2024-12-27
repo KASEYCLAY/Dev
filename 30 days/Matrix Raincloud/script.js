@@ -8,7 +8,7 @@ function createNumbersRain() {
     const fontSize = 25;
     const columns = canvas.width / fontSize;
     const drops = Array(Math.floor(columns)).fill(1);
-  
+
     function draw() {
       ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
       ctx.fillRect(0, 0, canvas.width, canvas.height);
